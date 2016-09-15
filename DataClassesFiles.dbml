@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Navigator2013" Class="DataClassesFilesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=NashVille;Initial Catalog=Navigator2013;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Navigator2013ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[Comptroller$File Attachment]" Member="Comptroller_File_Attachments">
+    <Type Name="Comptroller_File_Attachment">
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[Table ID]" Member="Table_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Primary Key Value 1]" Member="Primary_Key_Value_1" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Primary Key Value 2]" Member="Primary_Key_Value_2" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Primary Key Value 3]" Member="Primary_Key_Value_3" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="No_" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Attachment" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="[No_ Series]" Member="No__Series" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="FileName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Created By]" Member="Created_By" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Date Created]" Member="Date_Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Last Modified]" Member="Last_Modified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[Last Modified By]" Member="Last_Modified_By" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Transferred to Dest_]" Member="Transferred_to_Dest_" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Comptroller$Change Log Entry]" Member="Comptroller_Change_Log_Entries">
+    <Type Name="Comptroller_Change_Log_Entry">
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[Entry No_]" Member="Entry_No_" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Date and Time]" Member="Date_and_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[User ID]" Member="User_ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Table No_]" Member="Table_No_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Field No_]" Member="Field_No_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Type of Change]" Member="Type_of_Change" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Old Value]" Member="Old_Value" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="[New Value]" Member="New_Value" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key]" Member="Primary_Key" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 1 No_]" Member="Primary_Key_Field_1_No_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 1 Value]" Member="Primary_Key_Field_1_Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 2 No_]" Member="Primary_Key_Field_2_No_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 2 Value]" Member="Primary_Key_Field_2_Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 3 No_]" Member="Primary_Key_Field_3_No_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Primary Key Field 3 Value]" Member="Primary_Key_Field_3_Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[Record ID]" Member="Record_ID" Type="System.Data.Linq.Binary" DbType="VarBinary(448) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
